@@ -28,4 +28,28 @@ Key components include:
 
 - Visualization of early exercise region
 
+### Module 3: Least-Squares Monte Carlo (LSM)
+This module implements American option pricing using the Least-Squares Monte Carlo (LSM) method introduced by Longstaff and Schwartz (2001). The continuation value is estimated via regression on simulated paths using two types of basis functions: standard polynomials and Laguerre polynomials.
+
+#### Features
+- Simulates multiple price paths using geometric Brownian motion.
+
+- Computes American option prices using both:
+
+   Polynomial regression (LSM_price)
+
+   Laguerre polynomial regression (LSM_price_lg)
+
+- Supports both American call and put options.
+
+- Compares LSM prices with:
+
+  Black-Scholes European option prices
+
+  CRR Binomial and Trinomial American prices
+
+- Analyzes convergence behavior with increasing number of Monte Carlo paths.
+
+- Visualizes early exercise regions by tracking optimal stopping decisions.
+
 
