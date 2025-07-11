@@ -1,6 +1,10 @@
-# American Option Pricing
+## American Option Pricing
 
 This project implements and compares multiple numerical methods for pricing American-style options, focusing on early exercise features and convergence behavior. The methods include tree-based models (CRR Binomial, Trinomial Tree), simulation-based Least Squares Monte Carlo (LSM), and Finite Difference Methods (Explicit, Implicit, Crank-Nicolson). For each approach, both American call and put options are examined and benchmarked against the European Black-Scholes price.
+
+### Files
+- `main.ipynb` — Jupyter notebook to implement
+- `pricing_american_options.pdf` — Project report 
 
 ### Module 1: American Option Pricing Using CRR Binomial Tree
 This module implements the Cox-Ross-Rubinstein (CRR) binomial tree method to price American call and put options.
@@ -54,8 +58,5 @@ This module implements and compares three numerical PDE-based methods to price A
 - PSOR (Projected Successive Over-Relaxation) is used in Implicit and CN schemes to handle the free boundary.
 - Crank-Nicolson shows good accuracy but convergence may degrade due to the early exercise constraint.
 
-## Files
-- `main.ipynb` — Jupyter notebook to implement
-- `pricing_american_options.pdf` — Project report 
 
 
